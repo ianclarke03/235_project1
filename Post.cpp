@@ -51,6 +51,6 @@ std::string Post::getTimeStamp(){
 
 std::string Post::displayPost(){
     
-    return (title + " posted at " + asctime( localtime (&rawtime) ) + ':' + "\n" + body + "\n");
+    return (title + " posted at " + asctime( localtime (&rawtime) ) + "\n" + body + "\n");
 
 }
