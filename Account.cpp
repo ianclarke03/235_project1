@@ -50,7 +50,7 @@ std::string Account::getPassword() const{
       @post         : generates a Post with the given title and body and adds it to it's vector of posts
       @return       : Will return true if the Post does not have an empty title or body and the Post is successfully added to the vector
       */
-bool Account::addPost(std::string tle, std::string bdy){
+bool Account::addPost(std::string tle const, std::string bdy const){
 
     bool yur; //declare a boolean variable to output
     int s = posts.size(); // using this variable and int q to determine if the post has successfully been added to the vector, q should be 1 more than s
