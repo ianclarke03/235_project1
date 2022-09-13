@@ -76,7 +76,7 @@ void Account::viewPosts(){
     
     for(auto x : posts){
         std::cout << x.displayPost();
-        //std::cout << std::endl;
+        std::cout << std::endl;
     }
 
 
