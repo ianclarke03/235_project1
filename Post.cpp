@@ -16,7 +16,7 @@ Post::Post(std::string tle, std::string bdy){
 
 
 
-void Post::setTitle(std::string newTitle) const{
+void Post::setTitle(std::string &newTitle) const{
     title = newTitle;
 }
 
@@ -27,18 +27,18 @@ std::string Post::getTitle() const{
 }
 
 
-void Post::setBody(std::string newbody) const{
+void Post::setBody(std::string &newbody) const{
     body = newbody;
 }
 
 
-std::string Post::getBody()const{
+std::string Post::getBody() const{
     return body;
 }
 
 
 
-std::string Post::getTimeStamp(){
+std::string Post::getTimeStamp() const{
 
     return asctime( localtime (&rawtime) );
 
@@ -60,7 +60,7 @@ std::string Post::displayPost(){
 */
 
 
-std::string Post::displayPost(){
+std::string Post::displayPost() const{
 
     std::string tm = asctime( localtime (&rawtime) );
     //tm.pop_back();
