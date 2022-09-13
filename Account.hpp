@@ -18,13 +18,13 @@
         Account(std::string username, std::string password);
 
         //@param a reference to the username of the Account
-        void setUsername(std::string newusnm);
+        void setUsername(std::string newusnm) const;
 
         //@return the username of the Account
         std::string getUsername() const;
 
         //@param a reference to the password of the Account
-        void setPassword(std::string newpswd);
+        void setPassword(std::string newpswd) const;
 
         //@return the password of the Account
         std::string getPassword() const;
