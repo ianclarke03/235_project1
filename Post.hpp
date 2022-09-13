@@ -34,7 +34,7 @@ class Post {
         /**
         @return : the title of the Post
         */
-        const std::string getTitle();
+        std::string getTitle() const;
 
 
         /**
@@ -46,7 +46,7 @@ class Post {
         /**
         @return : the body of the Post
         */
-        const std::string getBody();
+        std::string getBody() const;
 
 
 
