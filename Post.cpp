@@ -50,7 +50,10 @@ std::string Post::getTimeStamp(){
 
 
 std::string Post::displayPost(){
+
+    std::string tm = asctime( localtime (&rawtime) );
+    tm.pop_back();
     
-    return (title + " posted at " + asctime( localtime (&rawtime) ) + "\n" + body + "\n");
+    return (title + " posted at " + tm + "\0" + ":\n" + body + "\n");
 
 }
