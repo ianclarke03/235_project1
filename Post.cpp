@@ -22,7 +22,7 @@ void Post::setTitle(std::string newTitle){
 
 
 
-std::string Post::getTitle(){
+const std::string Post::getTitle(){
     return title;
 }
 
@@ -32,7 +32,7 @@ void Post::setBody(std::string newbody){
 }
 
 
-std::string Post::getBody(){
+const std::string Post::getBody(){
     return body;
 }
 
