@@ -50,7 +50,7 @@ class Post {
 
 
 
-        std::string getTimeStamp(); //prints the time the Post was created to the standard output as asctime(localtime(&time_stamp_))
+        std::string getTimeStamp() const; //prints the time the Post was created to the standard output as asctime(localtime(&time_stamp_))
 
 
 
@@ -58,7 +58,7 @@ class Post {
 
     //Displaying
 
-        std::string displayPost();    
+        std::string displayPost() const;    
         /*
       Print the Post in the following format:
       {title} posted at {time}:
