@@ -16,7 +16,7 @@ Post::Post(std::string tle, std::string bdy){
 
 
 
-void Post::setTitle(std::string newTitle){
+void Post::setTitle(std::string newTitle) const{
     title = newTitle;
 }
 
@@ -27,7 +27,7 @@ std::string Post::getTitle() const{
 }
 
 
-void Post::setBody(std::string newbody){
+void Post::setBody(std::string newbody) const{
     body = newbody;
 }
 
