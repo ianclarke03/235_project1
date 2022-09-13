@@ -29,7 +29,7 @@ class Post {
         /**
          * @param  : a reference to title of the Post
          * */
-        void setTitle(std::string newtitle);
+        void setTitle(std::string newtitle) const;
 
         /**
         @return : the title of the Post
@@ -40,7 +40,7 @@ class Post {
         /**
          @param  : a reference to body of the Post
         */
-        void setBody(std::string newbody);
+        void setBody(std::string newbody) const;
 
 
         /**
