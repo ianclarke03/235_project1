@@ -30,7 +30,7 @@ void Account::setUsername(std::string newusnm){
 }
 
 //@return the username of the Account
-const std::string Account::getUsername() const{
+std::string Account::getUsername() const{
     return usnm;
 }
 
@@ -40,7 +40,7 @@ void Account::setPassword(std::string newpswd){
 }
 
 //@return the password of the Account
-const std::string Account::getPassword() const{
+std::string Account::getPassword() const{
     return pswd;
 }
 
