@@ -25,7 +25,7 @@ Account::Account(std::string username, std::string password){
 
 
 //@param a reference to the username of the Account
-void Account::setUsername(std::string newusnm){
+void Account::setUsername(std::string newusnm) const{
     usnm = newusnm;
 }
 
@@ -35,7 +35,7 @@ std::string Account::getUsername() const{
 }
 
 //@param a reference to the password of the Account
-void Account::setPassword(std::string newpswd){
+void Account::setPassword(std::string newpswd) const{
     pswd = newpswd;
 }
 
