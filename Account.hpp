@@ -21,13 +21,13 @@
         void setUsername(std::string newusnm);
 
         //@return the username of the Account
-        std::string getUsername();
+        const std::string getUsername();
 
         //@param a reference to the password of the Account
         void setPassword(std::string newpswd);
 
         //@return the password of the Account
-        std::string getPassword();
+        const std::string getPassword();
 
 
       /*
